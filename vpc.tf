@@ -13,5 +13,3 @@ resource "aws_vpc" "sunivpc" {
   }
 }
 }
-#AKIAQA3SUJXD6QWHXT4T
-#XI9FJ/fiyPx6M80DH8aIDlrW3y4VN8eWO/oL6geY
