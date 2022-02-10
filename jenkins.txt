@@ -1,0 +1,33 @@
+step-1
+installing  java
+---------yum install java-1.8.0-openjdk-devel 
+
+step2:getting jenkins repository
+--------wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+step3:importing repository to local system
+----------rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+step4:installing jenkins
+----------yum install jenkins
+
+step5:if there any error  and this command
+
+
+
+step6:start and enable jenkins
+---------- systemctl start jenkins
+----------systemctl enable jenkins
+
+step7:open port 8080 in firewall OS and got  ipaddress:8080 and verfiy you jenkins 
+----------firewall-cmd --zone=public --add-port=8080/tcp --permanent
+----------firewall-cmd --zone=public --add-service=http --permanent
+
+step8:install git
+----------yum install git -y
+
+
+step9:configure java,git path to your jenkins 
+
+
+
