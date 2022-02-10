@@ -1,0 +1,5 @@
+print("enter the value of a")
+int a=input()
+print("enter the value of b")
+b=int(input())
+print("a+b",a+b)
