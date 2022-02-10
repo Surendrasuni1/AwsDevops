@@ -11,7 +11,7 @@ from email.mime.application import MIMEApplication
 
 def ListUsers(writer):
 	iam_report={}
-	client=boto3.client('iam',aws_access_key_id='AKIAQA3SUJXDWHSDUUVY',aws_secret_access_key='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')
+	client=boto3.client('iam',aws_access_key_id='aaaaaaaaaaaaaa',aws_secret_access_key='bbbbbbbbbbbbbbbbbbbbbbbbbbb')
 	response=client.list_users()
 	#print(response['Users'])
 	for user in response['Users']:
@@ -68,7 +68,7 @@ def email_ses_attachment_notification(file_name):
 	CHARSET = "utf-8"
 
 	# Create a new SES resource and specify a region.
-	client = boto3.client('ses',region_name=AWS_REGION,aws_access_key_id='AKIAQA3SUJXDWHSDUUVY',aws_secret_access_key='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')
+	client = boto3.client('ses',region_name=AWS_REGION,aws_access_key_id='aaaaaaaaaaaaaaaaaaaaa',aws_secret_access_key='bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb')
 
 	# Create a multipart/mixed parent container.
 	msg = MIMEMultipart('mixed')
