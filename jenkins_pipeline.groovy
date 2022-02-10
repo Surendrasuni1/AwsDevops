@@ -19,7 +19,7 @@ pipeline{
 				steps{
 					echo 'In SCM Stage'
 					
-					git credintialsId: '00bc114b-de10-4150-b985-7aac6d715798', url: 'https://github.com/Surendrasuni1/sample', branch:'master'
+					git credintialsId: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbb', url: 'https://github.com/Surendrasuni1/sample', branch:'master'
 				}	
 		
 			}
